@@ -32,7 +32,7 @@ body {
 
 .Banner {
   grid-area: Banner;
-  background-color: #d40119;
+  background-color: rgb(57, 169, 219);
   display: flex;
   align-items: center;
 }
@@ -51,7 +51,7 @@ body {
 
 .Menu {
   grid-area: Menu;
-  background-color: #c60008;
+  background-color: #f7f020;
   display: flex;
   align-items: center;
   /* box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35); */
@@ -172,7 +172,11 @@ li {
 
 .Footer {
   grid-area: Footer;
-  background-color: #c60008;
+  background-color: #f7f020;
+  display:flex;
+  flex-direction: row;
+  align-items: flex-end;
+
 }
 
 /* social media icons */
@@ -224,3 +228,57 @@ li {
 .social a:nth-child(5) {
   color: #03962a;
 }
+
+#overlay {
+  width: 100%;
+  margin: 3% auto;
+  height: 760px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+}
+
+input[type=submit] {
+  width: 20%;
+  left: 25%;
+  position: absolute;
+  background-color: #2092c3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#overlay_sub {
+  padding-top: 10px;
+  vertical-align: middle;
+  width: 900px;
+  margin: 1% auto;
+  margin-left: 20%;
+  height: 360px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+}
+
+
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
