@@ -11,13 +11,20 @@ body {
 .container1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 65px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 50px 50px 65px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
   gap: 0px 0px;
   /* grid-auto-flow: row; */
   grid-template-areas:
     'Banner Banner Banner Banner Banner Banner'
     'Banner Banner Banner Banner Banner Banner'
     'Menu Menu Menu Menu Menu Menu'
+    'Content Content Content Content Content Content'
+    'Content Content Content Content Content Content'
+    'Content Content Content Content Content Content'
+    'Content Content Content Content Content Content'
+    'Content Content Content Content Content Content'
+    'Content Content Content Content Content Content'
+    'Content Content Content Content Content Content'
     'Content Content Content Content Content Content'
     'Content Content Content Content Content Content'
     'Content Content Content Content Content Content'
@@ -42,7 +49,7 @@ body {
 }
 
 .item2 {
-  margin-left: 40px;
+  margin-left: 400px;
 }
 .item2 h1 {
   color: white;
@@ -103,7 +110,7 @@ li {
   display: grid;
   width: 90%;
 
-  margin: auto;
+  /* margin: auto; */
 
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -124,8 +131,9 @@ li {
 .deals {
   order: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   /* border-style: solid; */
+  align-self: flex-start;
 }
 .detailsdeals {
   width: 100%;
@@ -166,18 +174,21 @@ li {
 .blogs {
   order: 1;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   /* border-style: solid; */
+  align-self: flex-start;
 }
 
-.Footer {
-  grid-area: Footer;
+ .Footer {
+   grid-area: Footer;
   background-color: #f7f020;
   display:flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: flex-end; 
+ 
 
-}
+} 
+
 
 /* social media icons */
 .social {
@@ -230,16 +241,16 @@ li {
 }
 
 #overlay {
-  width: 100%;
+  width: 1000px;
   margin: 3% auto;
-  height: 760px;
+  height: 1150px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
 }
 
 input[type=submit] {
-  width: 20%;
-  left: 25%;
+  width: 15%;
+  left: 20%;
   position: absolute;
   background-color: #2092c3;
   color: white;
@@ -256,7 +267,7 @@ input[type=submit] {
   width: 900px;
   margin: 1% auto;
   margin-left: 20%;
-  height: 360px;
+  height: 800px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
 }
@@ -280,5 +291,69 @@ h4 {
   margin-right: auto;
 }
 
+.Name_label {
+    display: flex;
+    flex-direction: row;
+}
 
+/* .passenger_details.success input{
+  border:2px solid rgb(26, 167, 26);
+}
+.passenger_details.error input{
+  border:2px solid rgb(228, 29, 22);
+} */
+.passenger_details Error{
 
+  position:absolute;
+  margin: 3px;
+  visibility: hidden;
+  color: #f80000;
+  font-weight: bold;
+  font-size: small;
+}
+/* .label{
+  width: 10px;
+} */
+/* input[type=text], select {
+  width: 100%;
+  padding: 6px 20px;
+  margin: 8px 10px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+} */
+.fieldgroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.labels {
+  margin-left: 5px;
+  margin-right: 10px;
+  width: 80px;
+}
+
+.fieldinfo {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+}
+.fieldelements {
+  display: flex;
+  flex-direction: row;
+}
+
+.bookingdetail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bookingdetail Error {
+  position: absolute;
+  margin: 3px;
+  visibility: hidden;
+  color: #f80000;
+  font-weight: bold;
+  font-size: small;
+}
